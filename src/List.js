@@ -7,6 +7,13 @@ const List = [
     income: '$2500',
   },
   {
+    name: 'david jack',
+    age: 22,
+    location: 'Perth',
+    gender: 'female',
+    income: '$55300',
+  },
+  {
     name: 'dave samson',
     age: 34,
     location: 'sydney',
