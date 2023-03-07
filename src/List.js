@@ -9,7 +9,7 @@ const List = [
   {
     name: 'david jack',
     age: 22,
-    location: 'Perth',
+    location: 'Philadelphia',
     gender: 'female',
     income: '$55300',
   },
@@ -35,7 +35,7 @@ const List = [
     income: '$45500',
   },
   {
-    name: 'Chris helsinger',
+    name: 'Philip helsinger',
     age: 67,
     location: 'Atlanta',
     gender: 'male',

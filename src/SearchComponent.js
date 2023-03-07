@@ -4,6 +4,7 @@ import List from './List.js';
 
 export default function SearchComponent() {
   const [customers, setCustomer] = useState(List);
+  const [isListEmpty, setIsListEmpty] = useState(false);
 
   function sortObj(list, key) {
     function compare(a, b) {
@@ -33,18 +34,22 @@ export default function SearchComponent() {
     }
 
     setCustomer(result);
+    if (result.length > 0) {
+      setIsListEmpty(false);
+    } else {
+      setIsListEmpty(true);
+    }
   };
 
   return (
     <div>
-      <h1>Customer List</h1>
       <input
         type="text"
         placeholder="Search"
         name="search"
         onChange={handleSearch}
       />
-      <ListComponent customers={customers} />
+      <ListComponent customers={customers} isListEmpty={isListEmpty}/>
     </div>
   );
 }
